@@ -20,7 +20,7 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
+  background-color: black;
   color: $secondaryColor;
 }
 
@@ -37,7 +37,7 @@ header {
 }
 
 #navWrapper {
-  background-color: bisque;
+  background-color: lightslategray;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav {
     }
   }
   li.active {
-    background-color: blueviolet;
+    background-color: #db0000;
   }
   a {
     display: block;
@@ -60,14 +60,15 @@ nav {
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: #123;
+      color: black;
     }
   }
 }
 
 // begin the footer 
 #footerWrapper {
-  background-color: cornsilk;
+  background-color: black;
+  color: white;
 }
 footer {
   padding: .5rem $gutter;

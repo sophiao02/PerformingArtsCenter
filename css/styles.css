@@ -333,8 +333,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: #abc;
-  color: #001adb;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -350,7 +350,7 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: bisque;
+  background-color: lightslategray;
 }
 
 nav ul {
@@ -363,7 +363,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: blueviolet;
+  background-color: #db0000;
 }
 nav a {
   display: block;
@@ -373,11 +373,12 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #123;
+  color: black;
 }
 
 #footerWrapper {
-  background-color: cornsilk;
+  background-color: black;
+  color: white;
 }
 
 footer {
@@ -400,7 +401,6 @@ footer p {
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
-    border: 1px solid pink;
     margin: auto;
   }
 }
