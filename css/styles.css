@@ -363,7 +363,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #64aacd;
+  background-color: #5dabd2;
 }
 nav a {
   display: block;
