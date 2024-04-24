@@ -345,12 +345,12 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 #navWrapper {
-  background-color: darkslategray;
+  background-color: #0b7ab6;
 }
 
 nav ul {
@@ -363,7 +363,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #db0000;
+  background-color: #55bdf1;
 }
 nav a {
   display: block;

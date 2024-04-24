@@ -31,13 +31,13 @@ header {
   gap: 8px;
   h1 {
     margin: 0;
-    font-size: 1.2rem;
-    font-weight: $normalWeight;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
   }
 }
 
 #navWrapper {
-  background-color: darkslategray;
+  background-color: #0b7ab6;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav {
     }
   }
   li.active {
-    background-color: #db0000;
+    background-color: #55bdf1;
   }
   a {
     display: block;
