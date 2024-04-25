@@ -332,6 +332,7 @@ body {
   color: #333;
 }
 
+/*header styles*/
 #headerWrapper {
   background-color: black;
   color: white;
@@ -339,24 +340,30 @@ body {
 
 header {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 16px;
-  gap: 8px;
+  gap: 10px;
+}
+header img {
+  align-items: flex-end;
 }
 header h1 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
+  flex: 1;
 }
 header a {
-  padding: 0.5rem 16px;
+  font-size: 1rem;
   text-decoration: none;
   color: white;
 }
 header a:hover {
-  color: #FFBDD1;
+  color: #ffbdd1;
 }
 
+/*nav style**/
 #navWrapper {
   background-color: #003551;
 }
@@ -371,7 +378,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #8FD2FA;
+  background-color: #8fd2fa;
 }
 nav a {
   display: block;
@@ -381,9 +388,12 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #8FD2FA;
+  color: #8fd2fa;
 }
 nav li.active a {
+  color: #003551;
+}
+nav li.active a:hover {
   color: black;
 }
 
@@ -403,6 +413,71 @@ section div {
 section div img {
   width: 100%;
   height: auto;
+}
+
+h1 {
+  padding: 1rem;
+}
+
+/* Card styles */
+.card {
+  background-color: #f5fbff; /* Background color for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  margin-bottom: 20px; /* Spacing between cards */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Card title styles */
+.card h2 {
+  margin: 0 0 10px; /* Bottom margin for spacing */
+  font-size: 1.2rem; /* Font size for the title */
+  color: #333; /* Text color for the title */
+}
+
+/* Card image styles */
+.card img {
+  display: block; /* Make sure the image is a block element */
+  width: 100%; /* Make the image fill the width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Spacing between image and title */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  z-index: 1; /* Set the image's z-index to be higher than other elements */
+}
+
+/* Card content styles */
+.card p {
+  margin: 0; /* Remove default margin for paragraphs */
+  font-size: 1rem; /* Font size for the content */
+  color: #666; /* Text color for the content */
+}
+
+/* Hover effect for card */
+.card:hover {
+  transform: translateY(-1px); /* Move the card up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+h2 {
+  text-align: center;
+  color: #003551;
+}
+
+.card h2 {
+  padding: 1rem;
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+  position: relative; /* Add positioning context */
+  z-index: 2; /* Set the title's z-index to be higher than the image */
+  top: -10px;
 }
 
 #footerWrapper {
@@ -426,16 +501,28 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  header a {
+    font-size: 1.2rem;
+  }
   section {
     grid-template-columns: 1fr 1fr;
   }
+  .card:hover img {
+    transform: scale(1.07); /* Scale up the image on hover */
+  }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
+  header,
+  nav,
+  main,
+  footer {
     max-width: 60rem;
     margin: auto;
   }
   section {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
   }
 }

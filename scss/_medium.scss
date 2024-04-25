@@ -1,6 +1,11 @@
 header {
   padding: 2rem $gutter;
-  h1 {font-size: 2rem;}
+  h1 {
+    font-size: 2rem;
+  }
+}
+header a {
+  font-size: 1.2rem;
 }
 
 // main stuff
@@ -8,3 +13,6 @@ section {
   grid-template-columns: 1fr 1fr;
 }
 
+.card:hover img {
+  transform: scale(1.07); /* Scale up the image on hover */
+}
