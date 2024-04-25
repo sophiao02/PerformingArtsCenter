@@ -376,6 +376,20 @@ nav a:hover {
   color: black;
 }
 
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section div {
+  width: 100%;
+  padding: 1rem 16px;
+}
+section div img {
+  width: 100%;
+  height: auto;
+}
+
 #footerWrapper {
   background-color: black;
   color: white;
@@ -397,10 +411,16 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -3,3 +3,8 @@ header, nav, main, footer {
   //border: 1px solid pink;
   margin: auto;
 }
+
+// main stuff
+section {
+  grid-template-columns: 1fr 1fr 1fr;
+}
