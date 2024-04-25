@@ -348,9 +348,17 @@ header h1 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+header a {
+  padding: 0.5rem 16px;
+  text-decoration: none;
+  color: white;
+}
+header a:hover {
+  color: #FFBDD1;
+}
 
 #navWrapper {
-  background-color: #0b7ab6;
+  background-color: #003551;
 }
 
 nav ul {
@@ -363,7 +371,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #5dabd2;
+  background-color: #8FD2FA;
 }
 nav a {
   display: block;
@@ -373,6 +381,9 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
+  color: #8FD2FA;
+}
+nav li.active a {
   color: black;
 }
 

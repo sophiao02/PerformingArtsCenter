@@ -29,15 +29,25 @@ header {
   align-items: flex-end;
   padding: 1rem $gutter;
   gap: 8px;
+  
   h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: $boldWeight;
   }
+  a {
+    
+    padding: .5rem $gutter;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: #FFBDD1;
+    }
+  }
 }
 
 #navWrapper {
-  background-color: #0b7ab6;
+  background-color: #003551;
 }
 
 nav {
@@ -51,7 +61,7 @@ nav {
     }
   }
   li.active {
-    background-color: #5dabd2;
+    background-color: #8FD2FA;
   }
   a {
     display: block;
@@ -60,8 +70,11 @@ nav {
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: black;
+      color: #8FD2FA;
     }
+  }
+  li.active a {
+    color: black;
   }
 }
 
